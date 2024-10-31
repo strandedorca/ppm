@@ -1,0 +1,17 @@
+{
+  "name": "ppm",
+  "version": "1.0.0",
+  "description": "Personal Project Management Application",
+  "main": "index.js",
+  "author": "strandedorca",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "express": "^4.21.1"
+  },
+  "scripts": {
+  "start": "node server/server.js",
+  "client": "yarn --cwd client dev",
+  "dev": "concurrently \"yarn start\" \"yarn client\""
+  }
+}
